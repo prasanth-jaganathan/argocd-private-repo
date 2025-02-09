@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-maven-sample
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: docker-maven-sample
+  template:
+    metadata:
+      labels:
+        app: docker-maven-sample
+    spec:
+      containers:
+      - image: prasanth98/docker-maven-sample:build-0
+        name: docker-maven-sample
+        ports:
+        - containerPort: 8080
