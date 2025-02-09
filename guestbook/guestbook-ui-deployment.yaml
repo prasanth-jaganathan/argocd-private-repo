@@ -14,7 +14,7 @@ spec:
         app: maven-new-service
     spec:
       containers:
-      - image: prasanth98/maven-new-service:build-17
+      - image: prasanth98/maven-new-service:build-18
         name: maven-new-service
         ports:
         - containerPort: 8080
