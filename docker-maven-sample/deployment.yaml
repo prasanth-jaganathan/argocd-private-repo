@@ -14,7 +14,7 @@ spec:
         app: docker-maven-sample
     spec:
       containers:
-      - image: prasanth98/docker-maven-sample:build-0
+      - image: prasanth98/docker-maven-sample:build-1
         name: docker-maven-sample
         ports:
         - containerPort: 8080
